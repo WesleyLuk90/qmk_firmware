@@ -37,10 +37,10 @@ with open('requirements.txt', 'r') as fd:
             exit(255)
 
 # Figure out our version
-command = ['git', 'describe', '--abbrev=6', '--dirty', '--always', '--tags']
-result = subprocess.run(command, text=True, capture_output=True)
+# command = ['git', 'describe', '--abbrev=6', '--dirty', '--always', '--tags']
+# result = subprocess.run(command, text=True, capture_output=True)
 
-if result.returncode == 0:
+if False:
     os.environ['QMK_VERSION'] = 'QMK ' + result.stdout.strip()
 else:
     os.environ['QMK_VERSION'] = 'QMK ' + strftime('%Y-%m-%d-%H:%M:%S')
