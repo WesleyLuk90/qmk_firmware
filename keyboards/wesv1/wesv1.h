@@ -44,3 +44,5 @@
         { R35, R34, R33, R32,   R31, R30, RT4   }, \
         { R45, R44, R43, KC_NO, RT1, RT2, RT3   }, \
     }
+
+#define ANY(a) (a)
